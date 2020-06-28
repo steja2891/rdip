@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RDIP-REGISTRATION</title>
+    <style>
+body{
+  margin:auto;
+  margin:100px 200px 200px 200px;
+  background-color:#f4f4f4;
+}
+.homepage h2{
+  text-align: center  
+ }
+#mainhead{
+  font-family: sans-serif;
+  background-color: black;
+  color:white;
+}
+#nbar{
+  background-color:#333;
+  color:#fff;
+  height: 30px;
+}
+#nbar ul{
+  margin:4px;
+  position: absolute;
+  padding:0;
+  list-style:none;
+}
+#nbar li{
+  display:inline;
+
+}
+#nbar a{
+  color:#fff;
+  text-decoration:none;
+  font-size:18px;
+  padding: 15px;
+}
+.links h2{
+  float:right;
+  margin-top:30px;
+}
+.links h2{
+  margin-top: none;
+}
+.table table{
+  float:left
+}
+
+.table th,.table td, .table table{
+  
+  border:3px solid black;
+  border-collapse:collapse;
+  text-align: center;
+}
+.table td{
+  text-align: center;
+  padding:5px;
+}
+.data img{
+  float:right;
+   width:150px;
+   height:150px;
+   margin-top: none
+}
+
+.data p{
+  margin-top: 80px;
+  float:left;
+  text-align:left;
+}
+.data p1{
+  margin-top: 20px;
+  float:left;
+  text-align:left;
+}
+.fullform{
+  margin-left: 20px
+}
+.fullform .details{
+  padding-bottom: 10px;
+}
+.dtl{
+  line-height: 25px;
+}
+
+.fullform{
+  text-align: center;
+  font-weight: bold;
+}
+.fullform tr{
+  height: 30px;
+}
+</style>
+</head>
+<body>
+        <header id="mainhead">
+            <div class="homepage">
+                 <h2>Registration Page</h2>
+            </div>
+        </header>
+        <div class="links">
+              <a href="https://www.iiit.ac.in/">
+              <img src="https://www.iiit.ac.in/img/iiit-new.png" title="IIITH-Website"alt="IIITH-logo" style="width:150px;height:100px">
+              </a>
+              <h2><a href="https://serc.iiit.ac.in/rdip" title="RDIP-Homepage">RDIP</a></h2>
+        </div>        
+        <nav id="nbar">
+            <div class="headings">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="registration.html">Registration Form</a></li>
+                </ul>
+             </div>
+        </nav><br>
+        <form class="fullform" action="details.html">
+          <table>
+            <tr class="details">
+              <td><label>First Name: </label></td>
+              <td><input type="text" name="name" required></td>
+            </tr>
+            <tr class="details">  
+               <td><label>E-mail: </label></td>
+               <td><input type="email" name="E-mail" required></td>
+            </tr>
+            <tr class="details">
+               <td><label>Phone No: </label></td>
+               <td><input type="tel" name="mobilenum" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr class="details"> 
+                <td><label>Gender: </label></td>
+                <td><input type="radio" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" required>
+                    <label for="female">Female</label></td>
+            </tr>
+            <tr class="details">
+                <td><label>Reason for RDIP: </label></td>
+                <td><input type="checkbox" name="sub">
+                    <label for="sub">HTML</label>
+                    <input type="checkbox" name="sub">
+                    <label for="sub">CSS</label>
+                    <input type="checkbox" name="sub">
+                    <label for="sub">JavaScript</label></td>
+             </tr>
+             <tr class="details">
+                 <td><label>College: </label></td>
+                 <td><input type="text" name="name" required></td>
+             </tr>
+             <tr class="details">
+                 <td><input type="checkbox" name="confirm" required></td>
+                 <td><label for="confirm">I declare above details given by me and true.</label></td>
+             </tr>
+              <tr class="details">
+                  <td><input type="submit"></td>
+                  <td><input type="reset"></td>
+              </tr>
+            </table>
+        </form>
