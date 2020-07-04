@@ -1,0 +1,19 @@
+h2,h4{
+	font-family: sans-serif;
+	color:green;
+	text-align: center;
+	text-transform: uppercase;
+}
+#form{
+	text-align: center;
+}
+input,button{
+	padding: 10px;
+	margin: 5px;
+}
+#result{
+	text-align: center;
+	color: red;
+	font-size: 20px;
+	font-family: sans-serif; 
+}

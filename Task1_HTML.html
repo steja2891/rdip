@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Calculator | JavaScript</title>
+	<link rel="stylesheet" href="Task1_CSS.css">
+	<script src="JavaScript.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <h2>Calculator</h2>
+  <div id="error_message"></div>
+  <div id="details">
+    <label class="details">Choose an operation:</label>
+          <select name="operators" id="optr" onchange="showorhide(value)">
+            <option value="+">Addition (+) </option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+            <option value="%">Percentage (%)</option>
+            <option value="^">Square root (&radic;)</option>
+            <option value="|">Absolute (| |)</option>
+          </select>
+        <table>
+            <tr class="details" id="first">
+              <td><label>First Input: </label></td>
+              <td><input type="number" id="num1"></td>
+            </tr>
+            <tr class="details" id="second">  
+               <td><label>Second Input: </label></td>
+               <td><input type="number" id="num2"></td>
+            </tr>
+         </table>
+     <div class="btn">
+        <button  onclick="Calculator();">Calculate</button>
+    </div>
+    <div id="result"></div>
+  </div>
+</div>
+</body>
+</html>

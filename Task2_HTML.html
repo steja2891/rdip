@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Validation | JavaScript</title>
+	<link rel="stylesheet" href="Task2_CSS.css">
+	<script src="JavaScript.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <h2>Login Form</h2>
+  <div id="error_message"></div>
+  <form id="myform" onsubmit="return validate();">
+        <table>
+            <tr class="details">
+              <td><label>Name: </label></td>
+              <td><input type="text"  id="name"></td>
+            </tr>
+            <tr class="details">  
+               <td><label>E-mail: </label></td>
+               <td><input type="text" id="email"></td>
+            </tr>
+            <tr class="details">
+               <td><label>Phone No: </label></td>
+               <td><input type="text" id="phone"></td>
+            </tr>
+        </table>
+     <div class="btn">
+        <input type="submit">
+    </div>
+   </form>
+</div>
+</body>
+</html>
